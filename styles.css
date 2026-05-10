@@ -1,16 +1,16 @@
 :root {
   color-scheme: light;
-  --bg: #f7f4ee;
+  --bg: #f6f8fb;
   --surface: #ffffff;
-  --surface-soft: #ede7dd;
-  --text: #17191c;
-  --muted: #5f6670;
-  --line: rgba(23, 25, 28, 0.12);
-  --accent: #116466;
-  --accent-strong: #0b4c4f;
-  --accent-warm: #d47a43;
-  --ink: #16213e;
-  --shadow: 0 20px 60px rgba(22, 33, 62, 0.12);
+  --surface-soft: #e9eef5;
+  --text: #17202a;
+  --muted: #5d6673;
+  --line: rgba(23, 32, 42, 0.12);
+  --accent: #0f766e;
+  --accent-strong: #0b5f6a;
+  --accent-warm: #d4663f;
+  --ink: #10233f;
+  --shadow: 0 20px 60px rgba(15, 35, 62, 0.12);
   --radius: 8px;
   --section-pad: clamp(46px, 6vw, 76px);
 }
@@ -41,7 +41,8 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(circle at 10% 15%, rgba(212, 122, 67, 0.13), transparent 28rem),
+    radial-gradient(circle at 8% 12%, color-mix(in srgb, var(--accent) 15%, transparent), transparent 28rem),
+    radial-gradient(circle at 88% 4%, rgba(37, 99, 235, 0.1), transparent 30rem),
     linear-gradient(135deg, var(--bg), var(--surface-soft));
   color: var(--text);
   font-family:
